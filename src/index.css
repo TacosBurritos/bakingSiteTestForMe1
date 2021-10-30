@@ -1,0 +1,66 @@
+.jumbotron{
+  margin-bottom: 0px;
+  background-color: lightcyan;
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+}
+
+.specialPadding{
+  padding: 20px;
+}
+
+.bd-toc{
+  position: sticky;
+  top: 4rem;
+  overflow-y: auto;
+}
+
+h4{
+  font-family:'Zilla Slab', serif;
+}
+
+.navbar{
+  background-color: lightsalmon;
+  font-family: 'Zilla Slab', serif;
+}
+
+.imgAdjust{
+  width: 800px;
+  height: 450px;
+}
+
+.carousel{
+  margin: auto;
+  padding: auto;
+  border: lightcyan, solid;
+}
+
+a .card{
+  border-radius: 20px;
+}
+
+.card-img-top{
+  border-radius: 20px 20px 0px 0px;
+}
+
+.caraControl{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-caption{
+  background-color: rgba(0,0,0,0.5);
+}
+
+ul{
+  list-style-type: none;
+}
+
+footer{
+  background-color: lightsalmon;
+  margin-top: 20px;
+}
+
+.socialPadding{
+  padding-left:10px;
+  padding-right: 10px;
+}
