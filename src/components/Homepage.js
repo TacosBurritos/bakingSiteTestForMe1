@@ -5,8 +5,11 @@ function Home(){
       <div className="container">
         <div className="row">
           <div className="col">
-            <img src="/brownies.jpg" alt="Brownie images" />
+            <img src={process.env.PUBLIC_URL + "/assets/images/mypic.jpg"} alt="Brownie images" />
           </div>
+        </div>
+        <div className="row">
+
         </div>
       </div>
     );

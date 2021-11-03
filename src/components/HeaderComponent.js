@@ -1,4 +1,4 @@
-import { React, Component } from 'react';
+import React, { Component } from 'react';
 import { Nav, Navbar, NavbarToggler, NavLink, NavItem, Collapse, Jumbotron } from 'reactstrap'; //add NavbarBrand for logo later
 
 class Header extends Component {
@@ -18,7 +18,7 @@ class Header extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div className="col">
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
@@ -29,34 +29,37 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-                <Navbar>
-                    <NavbarToggler onClick={this.toggleNav} />
-                    <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <Nav navbar>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/home">
-                                    <i className="fa fa-home fa-lg" /> Home
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/birthdayrecipe">
-                                    Birthday Recipes
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/seasonalrecipe">
-                                    Seasonal Recipes
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/contactus">
-                                    <i className="fa fa-address-card fa-lg" /> Contact Us
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
+
+                <Navbar light sticky="top" expand="md">
+                    <div className="container">
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/home">
+                                        <i className="fa fa-home fa-lg" /> Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/birthdayrecipe">
+                                        Birthday Recipes
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/seasonalrecipe">
+                                        Seasonal Recipes
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/contactus">
+                                        <i className="fa fa-address-card fa-lg" /> Contact Us
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
                 </Navbar>
-            </React.Fragment>
+            </div>
         );
     }
 }
