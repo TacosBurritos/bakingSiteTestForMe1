@@ -1,15 +1,10 @@
 import React from 'react';
 
-function Home(){
+function Home(desserts){
     return(
       <div className="container">
         <div className="row">
-          <div className="col">
-            <img src={process.env.PUBLIC_URL + "/assets/images/mypic.jpg"} alt="Brownie images" />
-          </div>
-        </div>
-        <div className="row">
-
+            <img src={desserts.image} alt={desserts.description} />
         </div>
       </div>
     );
